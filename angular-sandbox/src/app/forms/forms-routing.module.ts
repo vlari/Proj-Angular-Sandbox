@@ -8,13 +8,11 @@ import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
   {
-    path: 'forms', 
+    path: '', 
     component: FormsComponent,
     children: [
       { path: 'template', component: TemplateformComponent },
-      { path: 'reactive', component: ReactiveformComponent },
-      { path: '', pathMatch: 'full', redirectTo: 'forms' },
-      { path: '**', component: NotfoundComponent }
+      { path: 'reactive', component: ReactiveformComponent }
     ]
   }
 ];

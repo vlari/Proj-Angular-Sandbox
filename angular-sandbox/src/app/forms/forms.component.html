@@ -1,1 +1,17 @@
-<p>forms works!</p>
+<div class="form-container">
+    <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+            <ul class="form-list">
+                <li *ngFor="let form of formTypes">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">{{form.type}}</h5>
+                          <p class="card-text">{{form.description}}</p>
+                          <a [routerLink]="form.formRouteLink" routerLinkActive="router-link-active"  class="card-link btn btn-primary">Learn More</a>
+                        </div>
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

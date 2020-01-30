@@ -1,0 +1,7 @@
+.form-container {
+  margin-top: 50px;
+}
+.form-container .form-list li {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
